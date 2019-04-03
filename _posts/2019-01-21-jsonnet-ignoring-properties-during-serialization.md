@@ -5,7 +5,7 @@ tags:
   - C#
 ---
 
-When you're using Json.NET to serialize an object by default all public fields and properties will be serialized. In this case, if you want to ignore some of them you can use JsonIgnore attribute. In the following example, you can see how you can ignore SSN property during the serialization process.
+When you're using *Json.NET* to serialize an object by default all public fields and properties will be serialized. In this case, if you want to ignore some of them you can use `JsonIgnore` attribute. In the following example, you can see how you can ignore `SSN` property during the serialization process.
 
 ~~~ csharp
 public class Worker
@@ -30,8 +30,8 @@ And below is the result of this serialization:
 }
 ~~~
 
-If you want to have more control over what is serialized you can change the default behavior of Json.NET by specifying JsonObject attribute with property MemberSerialization set to OptIn. In this situation, only members marked with JsonProperty attribute or DataMember attribute will be serialized. If you set MemberSerialization to OptIn and you don't specify any member to serialize (attributes JsonProperty or DataMember) you will receive empty JSON object - {}.
-The result of the following code is exactly the same as in the first example with ignoring SSN property and leaving the default value of the MemberSerialization property set to OptOut.
+If you want to have more control over what is serialized you can change the default behavior of Json.NET by specifying `JsonObject` attribute with property `MemberSerialization` set to `OptIn`. In this situation, only members marked with `JsonProperty` attribute or `DataMember` attribute will be serialized. If you set `MemberSerialization` to `OptIn` and you don't specify any member to serialize (attributes `JsonProperty` or `DataMember`) you will receive empty JSON object - `{}`.
+The result of the following code is exactly the same as in the first example with ignoring `SSN` property and leaving the default value of the `MemberSerialization` property set to `OptOut`.
 
 ~~~ csharp
 [JsonObject(MemberSerialization.OptIn)]
