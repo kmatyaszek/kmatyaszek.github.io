@@ -20,7 +20,7 @@ locale: en-US
 title: ".NET Land"
 description: "A blog about programming, software development and architecture."
 baseurl:  # the subpath of your site, e.g. "/blog"
-url: https://kmatyaszek.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: "/images/dotnetland_logo.png"
 date_format: "%B %-d, %Y"
 read_time: true
