@@ -5,7 +5,7 @@ tags:
 ---
 If you develop application with C# 7 and you want to be sure that null is always check properly you should use constant pattern "null". This is one of the 3 types of patterns in the new feature in C# called "pattern matching". In this case, you don't have to bother if in the class is defined override of the equals operator. In the following code snippets, we will go through two types of checking null (is and ==) and with or without override == operator.
 
-Code Snippet #1 present empty class Foo with checking null using constant pattern "null". In the IL we can see that to test if foo is null is used "brtrue.s". "brtrue.s" instruction transfers control to the specific target (in our case to IL_000d).
+Code Snippet #1 present empty class Foo with checking null using constant pattern "null". In the IL we can see that to test if foo is null is used `brtrue.s`. `brtrue.s` instruction transfers control to the specific target (in our case to `IL_000d`).
 
 ~~~
 // ------------------------------- Snippet #1 ---------------------------------
@@ -70,7 +70,7 @@ IL code:
 } // end of method Program::Main
 ~~~
 
-Code Snippet #3 present class Foo with a user-defined override of the equals operator with checking null using constant pattern "null". In this case, even if we have a user-defined override in the IL code is generated "brtrue.s" instruction.
+Code Snippet #3 present class Foo with a user-defined override of the equals operator with checking null using constant pattern "null". In this case, even if we have a user-defined override in the IL code is generated `brtrue.s` instruction.
 ~~~
 // ------------------------------- Snippet #3 ---------------------------------
 C# code:
@@ -134,7 +134,7 @@ IL code:
 } // end of method Program::Main
 ~~~
 
-Code Snippet #4 present class Foo with a user-defined override of the equals operator with checking null using == operator. In this case in the IL code is used binary operator op_Equality.
+Code Snippet #4 present class Foo with a user-defined override of the equals operator with checking null using == operator. In this case in the IL code is used binary operator `op_Equality`.
 
 ~~~
 // ------------------------------- Snippet #4 ---------------------------------

@@ -4,7 +4,7 @@ tags:
   - WPF
 ---
 
-In this post, I will show you how you can add copy button to [WPF Toolkit PropertyGrid](https://github.com/xceedsoftware/wpftoolkit/wiki/PropertyGrid). To do this we are going to use AdvancedOptionsMenu property. In the PropertyGrid you should set ShowAdvancedOptions to True and add context menu to AdvancedOptionsMenu:
+In this post, I will show you how you can add copy button to [WPF Toolkit PropertyGrid](https://github.com/xceedsoftware/wpftoolkit/wiki/PropertyGrid). To do this we are going to use `AdvancedOptionsMenu` property. In the `PropertyGrid` you should set `ShowAdvancedOptions` to `True` and add context menu to `AdvancedOptionsMenu`:
 
 ~~~ xml
 <Window x:Class="Q44727042.MainWindow"
@@ -58,7 +58,7 @@ public partial class MainWindow : Window
 }
 ~~~
 
-In this example, I create sample class Customer. As you can see below property Id is read-only and others properties can be edited in PropertyGrid. Copy functionality works for both types of property read-only and not read-only.
+In this example, I create sample class Customer. As you can see below property Id is read-only and others properties can be edited in `PropertyGrid`. Copy functionality works for both types of property read-only and not read-only.
 
 ~~~ csharp
 public class Customer
@@ -82,7 +82,7 @@ In the following screenshot, you can see the result of this code.
 
 <img src="/images/posts/Q44727042_2018-08-22_10-35-21.png" class="align-center" alt="">
 
-In the above example is a problem when you change SelectedObject. It's a bug in PropertyGrid. When you assign a new instance of the class to SelectedObject property you should each time create items in AdvancedOptionsMenu. The following extension method resolve the above problem.
+In the above example is a problem when you change `SelectedObject`. It's a bug in `PropertyGrid`. When you assign a new instance of the class to `SelectedObject` property you should each time create items in `AdvancedOptionsMenu`. The following extension method resolve the above problem.
 
 ~~~ csharp
 public static class PropertyGridEx

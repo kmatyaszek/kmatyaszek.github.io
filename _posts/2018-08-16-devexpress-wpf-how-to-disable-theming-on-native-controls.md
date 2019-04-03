@@ -31,8 +31,8 @@ Following list contains native WPF controls supported by DevExpress Themes:
 * System.Windows.TreeView
 * System.Windows.TreeViewItem
 
-If you want to disable DevExpress theming on native WPF control you can set attached property ```dxc:ThemeManager.ThemeName``` to value ```"None"```. You can apply this attached property to a particular container or control. If this property is applied to container all its child inherit this setting.
-Below example presents two containers. One of them inherits theme from global application theme (all its children are using DevExpress theme). The second one using the attached property ```dxc:ThemeManager.ThemeName``` disables theming mechanism.
+If you want to disable DevExpress theming on native WPF control you can set attached property `dxc:ThemeManager.ThemeName` to value `None`. You can apply this attached property to a particular container or control. If this property is applied to container all its child inherit this setting.
+Below example presents two containers. One of them inherits theme from global application theme (all its children are using DevExpress theme). The second one using the attached property `dxc:ThemeManager.ThemeName` disables theming mechanism.
 
 ~~~ xml
 <Window x:Class="WpfApp1.MainWindow"

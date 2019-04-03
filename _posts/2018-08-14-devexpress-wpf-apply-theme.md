@@ -4,9 +4,9 @@ tags:
   - WPF
   - DevExpress
 ---
-DevExpress theme manager has an important property *ApplicationThemeName*. This property allows you to set global theme applied to the entire application. Without settings this property, you have to specify theme name on every new window in your project.
+DevExpress theme manager has an important property `ApplicationThemeName`. This property allows you to set global theme applied to the entire application. Without settings this property, you have to specify theme name on every new window in your project.
 
-Let's say that you have following XAML code (in this example *ApplicationThemeName* is not set on application startup, only *ThemeName* is set in the main window):
+Let's say that you have following XAML code (in this example `ApplicationThemeName` is not set on application startup, only `ThemeName` is set in the main window):
 
 ~~~ xml
 <Window x:Class="WpfApp1.MainWindow"
@@ -59,9 +59,9 @@ namespace WpfApp1
 </Window>
 ~~~
 
-Now if you forget that you have to set *ThemeName* locally to every element, you probably end up with the situation presented below on the screenshot.
+Now if you forget that you have to set `ThemeName` locally to every element, you probably end up with the situation presented below on the screenshot.
 <img src="/images/posts/explorer_2018-08-13_10-57-19.png" class="align-center" alt="">
-If you set *ApplicationThemeName* on the startup of your application you don't have to remember to set the appropriate theme type to every new visual element in your application. Of course, if you want to change the theme on this new element you can use *ThemeName* property (if this property is used *ApplicationThemeName* isn't applied to this element).
+If you set `ApplicationThemeName` on the startup of your application you don't have to remember to set the appropriate theme type to every new visual element in your application. Of course, if you want to change the theme on this new element you can use `ThemeName` property (if this property is used `ApplicationThemeName` isn't applied to this element).
 
 ~~~ csharp
 using DevExpress.Xpf.Core;
