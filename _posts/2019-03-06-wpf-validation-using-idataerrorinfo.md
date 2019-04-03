@@ -1,5 +1,5 @@
 ---
-title: "WPF Validation - Display errors to the user"
+title: "WPF Validation - Using IDataErrorInfo"
 categories:
   - WPF Validation
 tags:
