@@ -25,7 +25,7 @@ In this post, I will show you how you can add copy button to [WPF Toolkit Proper
 </Window>
 ~~~
 
-In the MenuItem click event handler, you can access property data by property DataContext in sender object.
+In the `MenuItem` click event handler, you can access property data by property `DataContext` in sender object.
 ~~~ csharp
 public partial class MainWindow : Window
 {
@@ -58,7 +58,7 @@ public partial class MainWindow : Window
 }
 ~~~
 
-In this example, I create sample class Customer. As you can see below property Id is read-only and others properties can be edited in `PropertyGrid`. Copy functionality works for both types of property read-only and not read-only.
+In this example, I create sample class `Customer`. As you can see below property Id is read-only and others properties can be edited in `PropertyGrid`. Copy functionality works for both types of property read-only and not read-only.
 
 ~~~ csharp
 public class Customer
