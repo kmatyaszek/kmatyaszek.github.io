@@ -6,7 +6,7 @@ tags:
 
 Let's say that you have a table (shown below) and you want to select rows where column `Name` contains a percentage sign. So in this case query should return rows with ids: 3, 5 and 6.
 
-![Table](/images/posts/sql_table_items.png)
+![Table](/images/posts/sql_table_items_percent.png)
 
 If you are going to use the following query:
 
