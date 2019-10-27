@@ -1,7 +1,7 @@
 ---
 title: ".NET Core 3 preview - not working in VS2019 main release"
 tags:
-  - .NETCore3
+  - ASP.NET Core
 ---
 
 If you have installed VS2019 main release (version 16.0.\*) you cannot create a new project with target platform .NET Core 3 by default. To make it possible you have two options:
