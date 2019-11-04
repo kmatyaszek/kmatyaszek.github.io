@@ -7,6 +7,7 @@ tags:
 The Static File Middleware doesn't provide authorization, all files served by this middleware are publicly accessible. Static files are stored in the following directories:
 * Web root directory - `{content root}/wwwroot` - it's the default directory
 * you can also serve files outside the Web root directory by specifying it in the `UseStaticFiles` method as below:
+
 ``` csharp
 public void Configure(IApplicationBuilder app)
 {
