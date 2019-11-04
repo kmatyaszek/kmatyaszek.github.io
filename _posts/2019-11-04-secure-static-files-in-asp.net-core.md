@@ -1,5 +1,5 @@
 ---
-title: "ASP.NET Core - secure static files in ASP.NET Core"
+title: "Secure static files in ASP.NET Core"
 tags:
   - ASP.NET Core
 ---
